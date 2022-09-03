@@ -1,1 +1,6 @@
 <?php
+
+class Message
+{
+    
+}
