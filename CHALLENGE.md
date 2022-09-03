@@ -1,28 +1,13 @@
 # Objective
 
-1. Create a set of classes for a fictional messaging app.
-2. Determine if you should use instance, static, or constant data for each class.
+1. Practice creating an object from a class
 
 ## Program Logic
 
-Member
-
-* characteristics: username, role (admin or member)
-* behavior: addWorkspaceMember, createChat, createWorkspace, postMessageToChat
-
-Workspace:
-
-* characteristics: members, chats, url (ends with .flack.app)
-
-Chat:
-
-* characteristics: title, messages
-
-Message:
-
-* characteristics: content, author, date
+n/a
 
 ## Requirements
 
-* All properties and methods should be public
-* Include type declarations for properties and method parameters
+* Create atleast one new object for each class
+* Use the `echonl()` or similar function to examine the objects makeup in the terminal
+* Use the `get_declared_classes` function to verify your classes show up
