@@ -1,18 +1,16 @@
 # Objective
 
-1. Intialize an object's properties
-2. Add implementation for an object's methods
+1. Use a constructor method to improve object initialization
 
 ## Program Logic
 
-* Members can only be added to a workspace through an admin and not through the workspace directly
-* The member that creates a workspace should be assigned as the workspace admin
-* A member can only create chat’s for a workspace it belongs to
-* Assess where a properties accessibility or initial value needs to be updated
+* When a workspace is created, it's URL and admin should be set automatically
+* When a message is created, it's date should be set automatically
+* Only properties needed to create an object should be promoted by the constructor
 
 ## Requirements
 
-* Create two member objects: one admin and one non-admin
-* Use the admin member to create a workspace and add the non-admin as a member
-* Use any member to create a chat in the workspace and post a message
-* Print the workspace url, members, and chat messages to the terminal to verify the program works.
+* Add a constructor method to each class
+* Refactor each instance of an object's instantiation to use the constructor
+* Use the constructor to carry out any behaviors that should happen when an object is first created
+* Run the main app file to verify the program still works

@@ -8,6 +8,13 @@ class Member
     public string $username;
     public string $role = self::DEFAULT_ROLE;
 
+    public function __construct(
+
+    )
+    {
+        //
+    }
+
     public function addWorkspaceMember(Member $member, Workspace $workspace)
     {
         $admin = $workspace->getAdmin();

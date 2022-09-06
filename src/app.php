@@ -18,8 +18,3 @@ $chat = $member->createChat('general', $workspace);
 $member->postMessageToChat('Hello!', $chat);
 
 echonl($chat->messages);
-
-$member2 = new Member();
-$member2->username = 'member2';
-
-$member2->createChat('random', $workspace);
