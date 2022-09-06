@@ -5,11 +5,10 @@ class Member
     const ADMIN_ROLE = 'admin';
     const DEFAULT_ROLE = 'member';
 
-    public string $username;
     public string $role = self::DEFAULT_ROLE;
 
     public function __construct(
-
+        public string $username,
     )
     {
         //
@@ -34,8 +33,7 @@ class Member
             return;
         }
 
-        $chat = new Chat();
-        $chat->title = $title;
+        $chat = new Chat($title);
         $workspace->chats[] = $chat;
 
         return $chat;
@@ -43,19 +41,14 @@ class Member
 
     public function createWorkspace(string $subdomain)
     {
-        $workspace = new Workspace();
-        $workspace->setUrl($subdomain);
-        $workspace->setAdmin($this);
+        $workspace = new Workspace($subdomain, $this);
 
         return $workspace;
     }
 
     public function postMessageToChat(string $content, Chat $chat)
     {
-        $message = new Message();
-        $message->content = $content;
-        $message->author = $this->username;
-        $message->date = date('m/d/Y');
+        $message = new Message($content, $this->username);
 
         $chat->messages[] = $message;
     }

@@ -2,14 +2,13 @@
 
 class Message
 {
-    public string $content;
-    public string $author;
     public string $date;
 
     public function __construct(
-
+        public string $content,
+        public string $author,
     )
     {
-        //
+        $this->date = date('m/d/Y');
     }
 }

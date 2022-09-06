@@ -9,10 +9,12 @@ class Workspace
     public static string $urlDomain = '.flack.app';
 
     public function __construct(
-
+        public string $subdomain,
+        public Member $admin,
     )
     {
-        //
+        $this->setUrl($subdomain);
+        $this->setAdmin($admin);
     }
 
     public function setUrl(string $subdomain)

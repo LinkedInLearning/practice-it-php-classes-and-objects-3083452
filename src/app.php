@@ -2,11 +2,9 @@
 
 include '_includes.php';
 
-$admin = new Member();
-$admin->username = 'acme_admin';
+$admin = new Member('acme_admin');
 
-$member = new Member();
-$member->username = 'acme_member';
+$member = new Member('acme_member');
 
 $workspace = $admin->createWorkspace('acme');
 $admin->addWorkspaceMember($member, $workspace);
