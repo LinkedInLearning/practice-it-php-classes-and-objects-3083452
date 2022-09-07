@@ -1,6 +1,6 @@
 <?php
 
-class DirectMessage extends Chat
+class DirectMessage extends Chat implements Joinable
 {
     public array $memberUsernames = [];
 

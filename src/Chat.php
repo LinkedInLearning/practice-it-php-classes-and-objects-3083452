@@ -1,6 +1,6 @@
 <?php
 
-class Chat
+abstract class Chat
 {
     protected array $messages = [];
 

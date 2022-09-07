@@ -2,6 +2,8 @@
 
 class Member
 {
+    use HasUniqueId;
+
     const ADMIN_ROLE = 'admin';
     const DEFAULT_ROLE = 'member';
 
@@ -11,7 +13,7 @@ class Member
         public string $username,
     )
     {
-        //
+        $this->setId();
     }
 
     public function addWorkspaceMember(Member $member, Workspace $workspace)

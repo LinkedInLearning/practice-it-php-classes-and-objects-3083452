@@ -1,6 +1,6 @@
 <?php
 
-class Workspace
+class Workspace implements Joinable
 {
     private string $url;
     public array $chats = [];
