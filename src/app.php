@@ -4,15 +4,12 @@ include '_includes.php';
 
 $admin = new Member('acme_admin');
 
-$member = new Member('acme_member');
+$memberA = new Member('acme_memberA');
+$memberB = new Member('acme_memberB');
 
 $workspace = $admin->createWorkspace('acme');
-$admin->addWorkspaceMember($member, $workspace);
+$admin->addWorkspaceMember($memberA, $workspace);
+$admin->addWorkspaceMember($memberB, $workspace);
 
-echonl($workspace->getUrl());
-echonl($workspace->members);
-
-$chat = $member->createChat('general', $workspace);
-$member->postMessageToChat('Hello!', $chat);
-
-echonl($chat->messages);
+// creating a chat using the Chat class
+// $chat = $memberA->createChat('general', $workspace);

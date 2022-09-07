@@ -1,16 +1,16 @@
 # Objective
 
-1. Use a constructor method to improve object initialization
+1. Implement the hierarchical inheritance design pattern
 
 ## Program Logic
 
-* When a workspace is created, it's URL and admin should be set automatically
-* When a message is created, it's date should be set automatically
-* Only properties needed to create an object should be promoted by the constructor
+`DirectMessage`
+* Messages can only be posted and read by its members
+* The title should be a comma separated string of the chat's members usernames
+* You may need to revisit the accessibility of the `$messages` property on the `Chat` class
 
 ## Requirements
 
-* Add a constructor method to each class
-* Refactor each instance of an object's instantiation to use the constructor
-* Use the constructor to carry out any behaviors that should happen when an object is first created
-* Run the main app file to verify the program still works
+* Create two child classes that are derived from the existing `Chat` class; `DirectMessage` and `Channel`
+* Create a new `$channel` and new `$directMessage` object
+* Verify a direct message conversation can only be read by its members

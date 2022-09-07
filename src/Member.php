@@ -26,17 +26,32 @@ class Member
         $workspace->members[] = $member;
     }
 
-    public function createChat(string $title, Workspace $workspace)
+    public function createChannel(string $title, Workspace $workspace)
     {
         if (! $workspace->hasMember($this)) {
             echonl('Member must belong to ' . $workspace->getUrl() . ' to create a chat');
             return;
         }
 
-        $chat = new Chat($title);
-        $workspace->chats[] = $chat;
+        $channel = new Channel($title);
+        $workspace->chats[] = $channel;
 
-        return $chat;
+        return $channel;
+    }
+
+    public function createDirectMessage(array $members, Workspace $workspace)
+    {
+        if (! $workspace->hasMember($this)) {
+            echonl('Member must belong to ' . $workspace->getUrl() . ' to create a chat');
+            return;
+        }
+
+        $members = array_merge([$this], $members);
+
+        $dm = new DirectMessage($members);
+        $workspace->chats[] = $dm;
+
+        return $dm;
     }
 
     public function createWorkspace(string $subdomain)
@@ -48,8 +63,6 @@ class Member
 
     public function postMessageToChat(string $content, Chat $chat)
     {
-        $message = new Message($content, $this->username);
-
-        $chat->messages[] = $message;
+        $chat->addMessage($this, $content);
     }
 }
