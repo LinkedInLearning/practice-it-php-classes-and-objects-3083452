@@ -1,9 +1,11 @@
-# COURSENAME
-This is the repository for the LinkedIn Learning course `course-name`. The full course is available from [LinkedIn Learning][lil-course-url].
+# Practice It: PHP Classes and Objects 
+This is the repository for the LinkedIn Learning course Practice It: PHP Classes and Objects . The full course is available from [LinkedIn Learning][lil-course-url].
 
-![course-name-alt-text][lil-thumbnail-url] 
+![Practice It: PHP Classes and Objects ][lil-thumbnail-url]
 
-_See the readme file in the main branch for updated instructions and information._
+If you’re trying to become a more nuanced, successful PHP developer, you can’t overstate the value of expertise in object-oriented programming. That’s because PHP frameworks like Drupal, Symphony, and Laravel all require the same foundational programming skills. In this course, instructor Tammy Robinson gives you a practical overview of working with PHP classes and objects, two of the most important extensible concepts of procedural programming. Learn about creating classes and class instances, also known as objects, exploring a wide range of different access types, properties, and methods. Along the way, Tammy offers tips on using operators, constructors, inheritance, abstract classes, interfaces, and traits.<br><br>This course is integrated with GitHub Codespaces, an instant cloud developer environment that offers all the functionality of your favorite IDE without the need for any local machine setup. With GitHub Codespaces, you can get hands-on practice from any machine, at any time—all while using a tool that you’ll likely encounter in the workplace. Check out the [Using GitHub Codespaces with this course][gcs-video-url] video to learn how to get started.
+
+
 ## Instructions
 This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
 
@@ -22,15 +24,12 @@ To resolve this issue:
     Add changes to git using this command: git add .
 	Commit changes using this command: git commit -m "some message"
 
-## Installing
-1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
-2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
+### Instructor
 
+Tammy Robinson
 
-[0]: # (Replace these placeholder URLs with actual course URLs)
+Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/tammy-robinson?u=104).
 
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: http://
-
+[lil-course-url]: https://www.linkedin.com/learning/practice-it-php
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/C560DAQHccFoPdOcv4g/learning-public-crop_675_1200/0/1666653260659?e=1667955600&v=beta&t=j8bNYVlacOlE2nr7KmwX-7t_4Is2D1i8Qts8qz4tZY4
+[gcs-video-url]: https://www.linkedin.com/learning/practice-it-php/using-github-codespaces-with-this-course
