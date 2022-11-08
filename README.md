@@ -1,5 +1,5 @@
 # Practice It: PHP Classes and Objects 
-This is the repository for the LinkedIn Learning course Practice It: PHP Classes and Objects . The full course is available from [LinkedIn Learning][lil-course-url].
+This is the repository for the LinkedIn Learning course Practice It: PHP Classes and Objects. The full course is available from [LinkedIn Learning][lil-course-url].
 
 ![Practice It: PHP Classes and Objects ][lil-thumbnail-url]
 
