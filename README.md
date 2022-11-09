@@ -1,7 +1,7 @@
 # Practice It: PHP Classes and Objects 
 This is the repository for the LinkedIn Learning course Practice It: PHP Classes and Objects. The full course is available from [LinkedIn Learning][lil-course-url].
 
-![Practice It: PHP Classes and Objects ][lil-thumbnail-url]
+![1666653260659](https://user-images.githubusercontent.com/28540243/200747510-4e493bf4-2a29-4f80-9a20-f507c69a3230.jpeg)
 
 If you’re trying to become a more nuanced, successful PHP developer, you can’t overstate the value of expertise in object-oriented programming. That’s because PHP frameworks like Drupal, Symphony, and Laravel all require the same foundational programming skills. In this course, instructor Tammy Robinson gives you a practical overview of working with PHP classes and objects, two of the most important extensible concepts of procedural programming. Learn about creating classes and class instances, also known as objects, exploring a wide range of different access types, properties, and methods. Along the way, Tammy offers tips on using operators, constructors, inheritance, abstract classes, interfaces, and traits.<br><br>This course is integrated with GitHub Codespaces, an instant cloud developer environment that offers all the functionality of your favorite IDE without the need for any local machine setup. With GitHub Codespaces, you can get hands-on practice from any machine, at any time—all while using a tool that you’ll likely encounter in the workplace. Check out the [Using GitHub Codespaces with this course][gcs-video-url] video to learn how to get started.
 
